@@ -1,0 +1,117 @@
+body{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.wrapper{
+    border-radius: 25px;
+    background-color: white;
+    font-family: 'Kumbh Sans','sans-serif';
+}
+
+/*
+.answer {
+    height: 0;
+    transition: all 0.4s;
+}
+*/
+.question-button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    border: none;
+    margin: 15px 15px 15px 0px;
+    padding: 0;
+    color: hsl(237, 12%, 33%);
+}
+.line {
+    border-top: 1px solid hsl(240, 5%, 91%);
+}
+.answer { 
+    max-height: 30px; 
+    width: 90%;
+    margin-bottom: 15px; 
+    margin-top: 0px;
+    font-size: 12px;
+    color: hsl(240, 6%, 50%);
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.hidden {
+    margin: 0;
+    max-height: 0;
+}
+.attribution { font-size: 11px; text-align: center; color: lightgray;}
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+
+@media (max-width: 1440px) {
+    .woman-mobile { display: none; }
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .woman-desktop {
+        position: fixed;
+        margin-top: 80px;
+        margin-left: -80px;
+    }
+    .wrapper {
+        width: 950px;
+        height: 550px;
+        background-image: url(./images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -750px -350px;
+        background-size: 120%;
+    }
+    .accordion {
+        width: 400px;
+        margin: auto 50px auto auto;
+    }
+    .faq {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+    .question-title{
+        font-size: 14px;
+        font-family: 'Kumbh Sans','sans-serif';
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+    .woman-desktop { display: none; }
+    .wrapper{
+        width: 350px;
+        display: block;
+        margin-top: 80px;
+        background-image: url(./images/bg-pattern-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: 35px 0;
+        background-size: 80%;
+    }
+    .woman-mobile {
+       display: block;
+       transform: scale(0.8);
+       margin-top: -155px;
+    }
+    .accordion{
+        width: 85%;
+        margin: 50px auto 0 auto;
+    }
+    .faq{
+        text-align: center;
+        margin-top: 0px;
+    }
+    .question-button{
+        margin: 15px 0px 15px 0px;
+    }
+}
