@@ -69,6 +69,7 @@ body{
         background-repeat: no-repeat;
         background-position: -750px -350px;
         background-size: 120%;
+        overflow-y: scroll;
     }
     .accordion {
         width: 400px;
