@@ -127,6 +127,7 @@ body{
     .accordion-wrapper {
         max-height: 300px;
         overflow-y: auto;
+        overflow-x: hidden;
     }
     .faq{
         text-align: center;
