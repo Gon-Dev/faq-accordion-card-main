@@ -91,7 +91,7 @@ body{
 @media (max-width: 400px) {
     body {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         padding-top: 60px;
     }
     .woman-desktop { display: none; }
@@ -103,7 +103,7 @@ body{
     }
     .wrapper{
         width: 330px;
-        height: 550px;
+        height: 400px;
         margin-top: 80px;
         margin-bottom: 30px;
         background-image: url(./images/bg-pattern-mobile.svg);
@@ -111,10 +111,9 @@ body{
         background-position: center -5px;
         background-size: 70%;
         display: flex;
-        overflow: auto;
         justify-content: center;
         align-items: center;
-
+        padding-top: 150px;
     }
     .accordion{
         width: 80%;
@@ -124,9 +123,7 @@ body{
         flex-direction: column;
         margin-right: auto;
         margin-left: auto;
-        max-height: 350px;
-        overflow: scroll;
-        padding-top: 100px;
+
     }
     .accordion-wrapper {
         max-height: 300px;
