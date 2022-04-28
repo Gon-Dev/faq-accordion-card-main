@@ -69,7 +69,10 @@ body{
         background-repeat: no-repeat;
         background-position: -750px -350px;
         background-size: 120%;
-        overflow-y: scroll;
+    }
+    .accordion-wrapper {
+        max-height: 300px;
+        overflow-y: auto;
     }
     .accordion {
         width: 400px;
@@ -89,6 +92,7 @@ body{
     body {
         width: 100%;
         height: 100vh;
+        padding-top: 60px;
     }
     .woman-desktop { display: none; }
     .woman-mobile {
@@ -98,25 +102,36 @@ body{
         top: 30px;
     }
     .wrapper{
-        width: 350px;
+        width: 330px;
         height: 550px;
-        display: block;
         margin-top: 80px;
+        margin-bottom: 30px;
         background-image: url(./images/bg-pattern-mobile.svg);
         background-repeat: no-repeat;
         background-position: center -5px;
         background-size: 70%;
-        overflow: scroll;
+        display: flex;
+        overflow: auto;
+        justify-content: center;
+        align-items: center;
+
     }
     .accordion{
         width: 80%;
-        margin: 50px auto auto auto;
+        height: 405px;
+        position: sticky;
         display: flex;
         flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        max-height: 350px;
+        overflow: scroll;
+        padding-top: 100px;
     }
     .faq{
         text-align: center;
-        margin: 100px auto 20px auto;
+        margin: 0px auto 20px auto;
+        position: sticky;
     }
     .question-button{
         margin: 15px 0px 15px 0px;
